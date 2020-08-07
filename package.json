@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node dist/index.js",
     "dev": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
-    "build": "tsc"
+    "build": "tsc",
+    "postinstall": "npm run build"
   },
   "author": "",
   "license": "ISC",
